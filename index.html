@@ -29,6 +29,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- header -->
@@ -72,15 +74,15 @@
             <!-- hero -->
             <section class="hero">
                 <section class="hero__content">
-                    <h1 class="hero__title">Exceptional dental care for all ages.</h1>
+                    <h1 class="hero__title " data-aos="fade-right">Exceptional dental care for all ages.</h1>
                     <p class="hero__desc">Exceptional dental care for all ages. Your great smile begins with a great dentist.</p>
                     <div class="hero__row">
-                        <button class="btn" href="">Book Online</button>
-                        <span class="hero__call">or call (+84) 335906807</span>
+                        <button class="btn animate__animated animate__backInLeft" href="">Book Online</button>
+                        <span class="hero__call ">or call (+84) 335906807</span>
                     </div>
                 </section>
                     <div class="hero__images">
-                        <div class="hero__images">
+                        <div class="hero__images ">
                             <img class="hero__img" src="./assets/img/concho.jpg" alt="">
                             <img class="hero__img" src="./assets/img/chocon.jpg" alt="">
                         </div>
@@ -95,7 +97,7 @@
             <h2 class="service-heading section-deading">Our services</h2>
             <p class="service-desdc section-desc">Exceptional dental care for all ages. Your great smile begins with a great dentist.</p>
             <div class="service__row">
-                <img class="service_image" src="./assets/img/service-concho.webp" alt="" >
+                <img class="service_image"data-aos="zoom-in" src="./assets/img/service-concho.webp" alt="" >
                 <div class="service__list">
                     <section class="service__item">
                         <div class="service__item-icon">
@@ -365,5 +367,9 @@
         <p class="footer-with-desc footer_desc">2021 GDN. Copyright and All rights reserved.</p>
     </div>
 </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
